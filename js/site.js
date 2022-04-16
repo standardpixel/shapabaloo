@@ -24,7 +24,8 @@ function search(state, term, categories, bcorp) {
     // open a new window with the search results for the term
     state.vendors.forEach(function(vendor) {
         categories.forEach(function(category) {
-            if (!vendor[1].split('|').includes(category)) return;
+            const categories = vendor[1].split('|');
+            if (categories.length && !categories.split('|').includes(category)) return;
             window.open(`${vendor[2]}${term}`);
         });
     });
