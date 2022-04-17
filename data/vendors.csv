@@ -1,3 +1,9 @@
-Oaktown Spice Shop,groceries,https://oaktownspiceshop.com/search?q=,no
-Grove Collaborative,home,https://www.grove.co/catalog/?q=,yes
-Target,home|groceries|electronics,https://www.target.com/s?searchTerm=,no
+Oaktown Spice Shop,groceries,https://oaktownspiceshop.com/search?q=,FALSE
+Grove Collaborative,home,https://www.grove.co/catalog/?q=,TRUE
+Target,home|groceries|electronics,https://www.target.com/s?searchTerm=,FALSE
+NewEgg,electronics,https://www.newegg.com/p/pl?d=,FALSE
+King Arthur Flour,groceries,https://www.kingarthurbaking.com/search?bc_product_index%5Bquery%5D=,TRUE
+Boxed,groceries, home",https://www.boxed.com/products/search/,FALSE
+Dr Bronner,home,https://www.drbronner.com/?s=,TRUE
+JCrew (Mens),mens clothes,https://www.jcrew.com/search/mens?Ntrm=,FALSE
+JCrew (Womans),womans clothes,https://www.jcrew.com/search?Ntrm=,FALSE

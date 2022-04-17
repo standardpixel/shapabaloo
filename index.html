@@ -13,14 +13,18 @@
 
     <div class="container">
         <!-- Search form-->
-        <form action="javascript:search(state, document.search.term.value, getCheckedCategoriesFromForm(document.search.categories.checked),document.search.bcorp)" name="search" method="get">
-            <input type="text" name="term" placeholder="Search">
-            <input type="submit" value="Search">
-            <input type="checkbox" name="categories" value="groceries">Groceries
-            <input type="checkbox" name="categories" value="home">Home
-            <input type="checkbox" name="categories" value="electronics">Electronics
-            <!-- radio fields with name bcorp-->
-            <input type="checkbox" name="bcorp" value="yes">
+        <form action="javascript:search(state, document.search.term.value, getCheckedCategoriesFromForm(document.search.category.checked),document.search.bcorp)" name="search" method="get">
+            <fieldset>
+                <input type="text" name="term" placeholder="Search">
+                <input type="submit" value="Search">
+            </fieldset>
+            <fieldset class="category-checkboxes">
+                <legend>Categories</legend>
+            </fieldset>
+            <fieldset>
+                <legend>Other Preferences</legend>
+                <input type="checkbox" name="bcorp" value="yes"> Only B-Corps
+            </fieldset>
         </form>
     </div>
 
